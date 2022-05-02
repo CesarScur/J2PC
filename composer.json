@@ -1,12 +1,18 @@
 {
-    "name": "modnar/json2phpClass",
+    "name": "cesarscur/j2pc",
     "description": "JSON to PHP classes generator",
     "version": "0.1.0",
     "type": "library",
-    "author": {
-        "name": "Brice Sigura",
-        "email": "brice.sigura@gmail.com"
-    },
+    "authors": [
+        {
+            "name": "Brice Sigura",
+            "email": "brice.sigura@gmail.com"
+        },
+        {
+            "name": "Cesar Augusto Scur",
+            "email": "csrscr@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": { "J2PC\\": "src/" }
     },
