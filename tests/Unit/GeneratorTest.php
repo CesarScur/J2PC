@@ -1,6 +1,9 @@
 <?php
+namespace Tests\Unit;
 
-class GeneratorTest extends PHPUnit_Framework_TestCase
+use Tests\TestCaseAbstract;
+
+class GeneratorTest extends TestCaseAbstract
 {
     public function testGenerateFromJson()
     {
