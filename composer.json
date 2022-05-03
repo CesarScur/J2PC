@@ -1,33 +1,40 @@
 {
-    "name": "cesarscur/j2pc",
-    "description": "JSON to PHP classes generator",
-    "version": "0.1.0",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Brice Sigura",
-            "email": "brice.sigura@gmail.com"
-        },
-        {
-            "name": "Cesar Augusto Scur",
-            "email": "csrscr@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": { "J2PC\\": "src/" }
+  "name": "cesarscur/j2pc",
+  "description": "JSON to PHP classes generator",
+  "version": "0.1.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Brice Sigura",
+      "email": "brice.sigura@gmail.com"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        },
-        "classmap": [
-            "tests/TestCaseAbstract.php"
-        ]
-    },
-    "require": {
-        "symfony/console": "^3.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
+    {
+      "name": "Cesar Augusto Scur",
+      "email": "csrscr@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "J2PC\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    },
+    "classmap": [
+      "tests/TestCaseAbstract.php"
+    ]
+  },
+  "require": {
+    "symfony/console": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --coverage-cobertura=phpunit-cobertura.xml"
+    ]
+  }
 }
